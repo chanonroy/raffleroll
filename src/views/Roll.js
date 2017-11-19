@@ -6,7 +6,9 @@ export class Roll extends Component {
         super(props);
     
         this.state = {
-            
+            loading: false,
+            access_token: '',
+            comments: []
         }
     }
 
@@ -14,6 +16,18 @@ export class Roll extends Component {
         return (
          <div> Hello World </div>   
         )
+    }
+
+    componentWillMount() {
+        // Grab access token from the router
+    }
+
+    handleSubmit() {
+
+        // Get total number of comments and media_id
+
+        // Get initial comments
+
     }
 
 }

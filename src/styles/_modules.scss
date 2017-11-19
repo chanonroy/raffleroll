@@ -20,8 +20,22 @@
     }
     &__subtitle {
         color: $color-light-grey;
+        font-weight: lighter;
     }
     &__btn {
         margin-top: 40px;
+    }
+}
+
+.sig {
+    text-align: center;
+    color: $color-light-grey;
+    margin: 20px 0;
+    &__link {
+        transition: all 0.2s ease;
+        font-weight: bold;
+        &:hover {
+            color: lightgrey;
+        }
     }
 }

@@ -33,7 +33,7 @@ export const INSTA_API = {
      * @param { String } access_token       OAuth token given after auth
      * @param { String } media_id           unique identifier for the media object
     */
-    get_comments: (access_token, media_id) =>
+    get_initial_comments: (access_token, media_id) =>
         request.get(`/media/${media_id}/comments`),
     
     /** (PUBLIC) GET the relationship between the oauth user and user_id

@@ -21,13 +21,21 @@ export class Home extends Component {
                 <div className="home-card card card--box">
                     <img className="home-card__icon" src="dist/assets/dice.svg" />
                     <h1> RaffleRoll </h1>
-                    <h3 className="home-card__subtitle"> A tool to pick Instagram raffle winners </h3>
+                    <h3 className="home-card__subtitle"> A helpful tool to randomly choose Instagram raffle winners </h3>
                     <a href={this.state.oauth_url}>
                         <Button 
                             className="home-card__btn"
                             type="primary">
                             Connect to Instagram
                         </Button>
+                    </a>
+                </div>
+                <div className="sig"> 
+                    Developed by <a 
+                        target="_blank"
+                        className="sig__link"
+                        href="http://chanonroy.com"> 
+                        Chanon Roy 
                     </a>
                 </div>
             </div>

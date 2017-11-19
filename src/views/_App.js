@@ -6,6 +6,7 @@ import '../styles/main.scss';
 import '../assets/_assets.js';
 
 import { Home } from './Home';
+import { Roll } from './Roll';
 
 export class App extends Component {
     
@@ -15,6 +16,7 @@ export class App extends Component {
                 <div className="container">
                     <Switch>
                         <Route exact path='/' component={Home} />
+                        <Route exact path='/roll' component={Home} />
                         <Route render={function() {
                         return <div> 404 - Not Found </div>
                         }}/>
