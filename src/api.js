@@ -19,7 +19,7 @@ export const INSTA_API = {
     */
     get_oauth_url() {
         let service = this;
-        return `https://api.instagram.com/oauth/authorize?client_id=${service.client_id}&redirect_uri=${service.redirect_uri}&response_type=token`
+        return `https://api.instagram.com/oauth/authorize?client_id=${service.client_id}&redirect_uri=${service.redirect_uri}&response_type=token`;
     },
 
     /** (PUBLIC) GET the media_id and total comment count
@@ -29,7 +29,7 @@ export const INSTA_API = {
     get_media_data: (access_token, shortcode) =>
         request.get(`/media/shortcode/${shortcode}`),
 
-    /** (PUBLIC) GET a page of comments
+    /** (PUBLIC) GET the first page of comments
      * @param { String } access_token       OAuth token given after auth
      * @param { String } media_id           unique identifier for the media object
     */

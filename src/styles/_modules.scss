@@ -1,0 +1,27 @@
+.card {
+    // basic card class with padding
+    background-color: white;
+    box-shadow: $shadow-default;
+    border-radius: $border-radius-default;
+    margin: 7px 0;
+    padding: 40px;
+
+    &--box {
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+  }
+
+.home-card {
+    &__icon {
+        height: 125px;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        color: $color-light-grey;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// COLORS
+$color-font: #384047;
+$color-background: #F3F5F7;
+
+$color-light-grey: lighten(grey, 15%);
+$color-dark-blue: #203B56;
+$color-light-blue: #4DBAF4;
+
+$shadow-default: 0 0.5px 0.5px 0 rgba(0,0,0,.15);
+$border-radius-default: 3px;
+$transition-custom: all 0.3s ease;
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-font;
+    background-color: $color-background;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+}

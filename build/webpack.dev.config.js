@@ -25,6 +25,17 @@ module.exports = {
           use: 'babel-loader'
         },
         {
+          test: /\.css$/,
+            use: [
+              {
+                loader: 'style-loader'
+              },
+              {
+                loader: "css-loader?minimize"
+              },
+            ],
+        },
+        {
           test: /\.scss$/,
             use: [
               {
@@ -48,7 +59,18 @@ module.exports = {
           options: {
             name: 'assets/[name].[ext]'
           },
-        }
+        },
+        {
+          test: /.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+          use: [{
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/',
+              publicPath: '../'
+            }
+          }]
+       },
       ]
     },
 

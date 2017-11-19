@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import propTypes from 'prop-types';
+import 'element-theme-default';
+import '../styles/main.scss';
+import '../assets/_assets.js';
 
 import { Home } from './Home';
 
