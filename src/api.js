@@ -29,7 +29,6 @@ export const INSTA_API = {
     get_media_data: (access_token, shortcode) =>
         request.get(`/media/shortcode/${shortcode}`),
 
-<<<<<<< dcd2fb46366e1fba96d467900e8e8d098eba3143
     /** (PUBLIC) GET a page of comments
      * @param { String } access_token       OAuth token given after auth
      * @param { String } media_id           unique identifier for the media object
@@ -43,22 +42,5 @@ export const INSTA_API = {
     */
     get_relationship: (acess_token, user_id) =>
         request.get(`/user/${user_id}/relationship`)
-=======
-
-        // (REQUEST) Get total number of comments
-
-            // Get request.data.id = media_id
-       
-            // Generate random number for comment page
-
-            // (REQUEST) Get a specific comment page
-
-                // Select a random comment
-
-                // (REQUEST) - get information on that user for display + follow back param
-
-        // TODO: try and reduce request count from 3
-    },
->>>>>>> firebase
 
 }
