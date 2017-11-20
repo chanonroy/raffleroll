@@ -10,7 +10,8 @@ export class Home extends Component {
         super(props);
     
         this.state = {
-            oauth_url: ''
+            oauth_url: '',
+            test_url: '/'
         }
     }
 
@@ -20,8 +21,11 @@ export class Home extends Component {
 
                 <div className="home-card card card--box">
                     <img className="home-card__icon" src="dist/assets/dice.svg" />
-                    <h1> RaffleRoll </h1>
-                    <h3 className="home-card__subtitle"> A helpful tool to randomly choose Instagram raffle winners </h3>
+                    <h1 className="home-card__title"> 
+                        RaffleRoll 
+                        <span className="home-card__badge"> BETA </span>
+                    </h1>
+                    <h3 className="home-card__subtitle"> A helpful tool to pick random comments for Instagram raffles </h3>
                     <a href={this.state.oauth_url}>
                         <Button 
                             className="home-card__btn"
