@@ -11,7 +11,7 @@ export class Home extends Component {
     
         this.state = {
             oauth_url: '',
-            test_url: '/'
+            test_url: '/roll?access_token=adsfsdaf343423849237dsf'
         }
     }
 
@@ -26,13 +26,13 @@ export class Home extends Component {
                         <span className="home-card__badge"> BETA </span>
                     </h1>
                     <h3 className="home-card__subtitle"> A helpful tool to pick random comments for Instagram raffles </h3>
-                    <a href={this.state.oauth_url}>
+                    <Link to={this.state.test_url}>
                         <Button 
                             className="home-card__btn"
                             type="primary">
                             Connect to Instagram
                         </Button>
-                    </a>
+                    </Link>
                 </div>
                 <div className="sig"> 
                     Developed by <a 

@@ -16,7 +16,7 @@ export class App extends Component {
                 <div className="container">
                     <Switch>
                         <Route exact path='/' component={Home} />
-                        <Route exact path='/roll' component={Home} />
+                        <Route exact path='/roll' component={Roll} />
                         <Route render={function() {
                         return <div> 404 - Not Found </div>
                         }}/>

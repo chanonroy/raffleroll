@@ -4,8 +4,7 @@ const request = axios.create({
     baseURL: 'https://api.instagram.com/v1',
     timeout: 10000,
     headers: {
-        'Content-Type': 'application/json',
-        'X-Requested-With': 'XMLHttpRequest'
+        'Content-Type': 'application/json'
     },
 });
 
@@ -27,7 +26,7 @@ export const INSTA_API = {
      * @param { String } shortcode          unique shortcode identifier found in a media url  
     */
     get_media_data: (access_token, shortcode) =>
-        request.get(`/media/shortcode/${shortcode}`),
+        request.get(`/media/shortcode/${shortcode}?access_token=${access_token}`),
 
     /** (PUBLIC) GET the first page of comments
      * @param { String } access_token       OAuth token given after auth
